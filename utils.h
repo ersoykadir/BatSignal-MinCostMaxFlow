@@ -5,13 +5,15 @@
 #include <string>
 #include <stack>
 #include <limits>
+#include <vector>
 using namespace std;
 class Vertex {
 public:
-    string name;
-    unordered_map<string, pair<int,int>> adjacencyMap;
+    //string name;
     int ID;
-    Vertex(string name="",int ID=-1);
+    //unordered_map<string, pair<int,int>> adjacencyMap;
+    vector<pair<int,int>> adjacencyMap;
+    Vertex(int ID=-1);
     void addEdge(string name, pair<int,int> capacity_cost);
     friend ostream& operator<<(ostream&output,const Vertex v);
     //ostream& operator<<(ostream& os, const Vertex v);

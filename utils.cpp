@@ -8,8 +8,8 @@ using namespace std;
 
 
 
-Vertex::Vertex(string name,int ID) {
-    this->name = name;
+Vertex::Vertex(int ID) {
+    //this->name = name;
     this->ID = ID;
 }
 
